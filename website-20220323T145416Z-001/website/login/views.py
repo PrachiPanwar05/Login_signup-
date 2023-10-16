@@ -6,7 +6,7 @@ pwd=''
 def loginaction(request):
     global em,pwd
     if request.method=="POST":
-        mydb=mysql.connect(host="localhost",user="root",passwd="Yadav@2922",database='loginnn',auth_plugin="mysql_native_password")
+        mydb=mysql.connect(host="localhost",user="root",passwd="0522",database='loginnn',auth_plugin="mysql_native_password")
         cursor=mydb.cursor()
         d=request.POST
         for key,value in d.items():
